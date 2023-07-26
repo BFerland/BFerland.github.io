@@ -21,11 +21,44 @@
       border-radius: 10px; /* Round the corners of the block */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
   <h1>Hello World</h1>
   <p>I'm hosted with GitHub Pages.</p>
+
+  <div class="box-container">
+    <div class="box" onclick="openPage('lims.html')">LIMS Development</div>
+    <div class="box" onclick="openPage('database.html')">Database Development and Administration</div>
+    <div class="box" onclick="openPage('access.html')">Microsoft Access</div>
+    <div class="box" onclick="openPage('python.html')">Python</div>
+    <div class="box" onclick="openPage('web.html')">Web Development</div>
+  </div>
+
+  <script>
+    function openPage(url) {
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
-
