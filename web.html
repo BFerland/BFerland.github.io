@@ -2,11 +2,44 @@
 <html>
 <head>
   <title>Web Development</title>
+  <style>
+    body {
+      background-color: #e0f2f1; /* Light blue color for the background */
+      font-family: Arial, sans-serif; /* Font family for the text */
+      text-align: center; /* Center-align the text */
+    }
+    
+    h1 {
+      color: #0288d1; /* Blue color for the heading */
+      margin-bottom: 30px; /* Add some space below the heading */
+    }
+    
+    p {
+      background-color: #fff; /* White background for the paragraph */
+      display: inline-block; /* Convert the paragraph to block-style */
+      padding: 15px 30px; /* Add padding around the text */
+      border-radius: 10px; /* Round the corners of the block */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+    .back-button {
+      background-color: #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <h1>Web Development</h1>
-  <p>Content related to web development goes here.</p>
-  <button onclick="goBack()">Back</button>
+  <h1>LIMS Development</h1>
+  <p>Content related to LIMS development goes here.</p>
+  <div class="back-button" onclick="goBack()">Back</div>
 
   <script>
     function goBack() {
