@@ -14,7 +14,7 @@
       font-size: 48px;
       color: #0288d1; /* Blue color for the heading */
       margin-bottom: 30px; /* Add some space below the heading */
-      animation: bounce 1.5s infinite;
+      animation: bounce 1.5s forwards; /* Play the animation once and retain the final state */
     }
 
     @keyframes bounce {
@@ -35,6 +35,23 @@
       padding: 15px 30px; /* Add padding around the text */
       border-radius: 10px; /* Round the corners of the block */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+    /* Styling for the "Resume" link */
+    .resume-link {
+      background-color: #4caf50; /* Green color for the "Resume" link */
+      color: #fff; /* White text color for the link */
+      text-decoration: none; /* Remove underline from the link */
+      padding: 15px 30px; /* Add padding around the link */
+      border-radius: 10px; /* Round the corners of the link */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      transition: transform 0.2s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .resume-link:hover {
+      transform: scale(1.05);
     }
 
     .box-container {
@@ -60,7 +77,7 @@
 </head>
 <body>
   <h1 class="cool-heading">Benjamin Ferland's Portfolio</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+  <a class="resume-link" href="resume.html" target="_blank">Resume</a>
 
   <div class="box-container">
     <div class="box" onclick="openPage('lims.html')">LIMS Development</div>
